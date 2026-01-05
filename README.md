@@ -1,2 +1,3 @@
 # picoblog
-PicoBlog
+
+Yet another microblogging platform. PicoBlog.
