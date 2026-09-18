@@ -1,0 +1,73 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  font-weight: 400;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heroCode {
+  margin-top: 4rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: #a5b4fc;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroCode::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-purple), transparent);
+  opacity: 0.5;
+}
+
+.typeLine {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--accent-blue);
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-blue) }
+}

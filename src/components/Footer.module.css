@@ -1,0 +1,66 @@
+.footer {
+  border-top: 1px solid var(--glass-border);
+  padding: 4rem 0 2rem;
+  background: rgba(5, 5, 10, 0.5);
+  margin-top: 4rem;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 300px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.linkGroup h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.linkGroup a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.linkGroup a:hover {
+  color: var(--text-primary);
+}
+
+.bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
